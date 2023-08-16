@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <script>
+        /*
+        block
+        {
+
+        }
+        object
+        => pair of key/value, property/value, name/value
+
+        // accessing object values
+        // two ways
+        1. bracket[] notation
+        2. dot(.) notation
+        
+        */
+        var details = {
+            name: "ram",
+            address: {
+                tempAddress: 'ktm',
+                perAddress: 'Ramechhap'
+
+            },
+            email: 'ram@gmail.com'
+        }
+        console.log(details['address']['tempAddress'])
+        console.log(details.address.tempAddress)
+
+        // bracket notation
+        // syntax:
+        /*
+        object_name['key']
+        
+        */
+        var result = details['email'];
+        console.log("your email is: ", result);
+        console.log(details);
+        console.log(details['name'] + " " + details['email']);
+
+        //    dot notation
+        /*
+        syntax:
+        object_name.key
+        
+        */
+        var result1 = details.name;
+        console.log(result1)
+
+
+        //   update object values
+        details.name = "shyam"
+        console.log(details)
+
+        // add new key/value in object
+        var phone = prompt("enter your phone number here")
+        details.phone = phone;
+        console.log(details)
+
+    </script>
+</body>
+
+
+</html>
